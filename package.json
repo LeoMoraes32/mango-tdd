@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll --silent --colors --noStackTrace",
+    "test": "jest --watch --silent --colors --noStackTrace --passWithNoTests",
+    "test:unit": "jest --watch --silent --colors --noStackTrace",
     "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
     "test:ci": "jest --coverage",
     "dev": "nodemon"
